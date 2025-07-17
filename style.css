@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-section {
+  background: #667eea;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.profile-card {
+  max-width: 300px;
+  margin: auto;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background: #667eea;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.slider-section {
+  background: #fff;
+}
+
+.swiper {
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.card-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 280px;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.memory-section {
+  background: #eef2ff;
+}
+
+.memory-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  perspective: 600px;
+}
+
+.view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: transform 0.5s;
+  border-radius: 8px;
+}
+
+.front-view {
+  background: #ccc;
+}
+
+.back-view {
+  background: #667eea;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.card.flip .front-view {
+  transform: rotateY(180deg);
+}
+
+.card.flip .back-view {
+  transform: rotateY(0);
+}
